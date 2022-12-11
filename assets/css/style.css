@@ -1,35 +1,32 @@
 .container{
     width: 100%;
     max-width: 1120px;
-    margin: 0 auto;
+    margin-inline: auto;
 }
 .cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 1rem 0;
 }
-.card-2{
-    background-image: url(/assets/images/cities.jpg);
+.card-2,.card-4,.card-5,.card-7{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.card-5,.card-7{
+    background-position: center;
+}
+.card-2{
+    background-image: url(/assets/images/cities.jpg);
+}
 .card-4{
     background-image: url(/assets/images/cup.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: bottom;
 }
 .card-5{
     background-image: url(/assets/images/bousole.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 .card-7{
     background-image: url(/assets/images/mountain.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 .card-1, .card-8{
     color: #fff;
@@ -49,19 +46,19 @@
     text-align: center;
     padding: 1rem 0;
 }
-h1{
+h1,p,a{
     padding: 0.5rem 0;
+}
+h1{
     font-size: 1.25rem;
 }
 p{
     margin: 0 2rem;
-    padding: 0.5rem 0;
    font-size: 1.2rem;
     line-height: 1.5rem;
     font-style: italic;
 }
 a{
-    padding: 0.5rem 0;
     border-bottom: 1px solid;
     text-decoration: none;
 }
@@ -74,7 +71,7 @@ a:hover{
 .card-link2{
     color: #fff;
 }
-@media(max-width:600px){
+@media(max-width:880px){
     .cards{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
